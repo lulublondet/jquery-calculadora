@@ -3,7 +3,7 @@ $( _ => {
 	const $valInput = $('input:text').addClass("gray-dark");
 	const $containerBotones = $('.container-botones');
 	const $botones = $('input:button').addClass("gray-dark");
-			$botones.eq(12).nextAll().addBack().addClass("gray-green");		 
+		  $botones.eq(12).nextAll().addBack().addClass("gray-green");		 
 
 		$containerBotones.on('click','input',function(e){
 		 
