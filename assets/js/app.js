@@ -1,7 +1,9 @@
 $( _ => {
 
-	const $valInput = $('input:text');
+	const $valInput = $('input:text').addClass("gray-dark");
 	const $containerBotones = $('.container-botones');
+	const $botones = $('input:button').addClass("gray-dark");
+			$botones.eq(12).nextAll().addBack().addClass("gray-green");		 
 
 		$containerBotones.on('click','input',function(e){
 		 
@@ -20,7 +22,7 @@ $( _ => {
 				}
 
 			$(this).addClass('active');
-			$(this).siblings().removeClass();		
+			$(this).siblings().removeClass('active');		
 
 		})
 
